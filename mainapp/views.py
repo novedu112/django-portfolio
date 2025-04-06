@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("Привет! Это мой первый Django-сайт!")
+    return render(request, 'mainapp/index.html')
